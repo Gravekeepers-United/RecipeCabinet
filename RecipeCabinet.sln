@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "RecipeCabinet.Database", "RecipeCabinet.Database\RecipeCabinet.Database.sqlproj", "{D91AB233-5166-47E2-ADAA-423DFD616070}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{979B3697-D481-46AA-ABB8-BC987A3B2AD2}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{D72AAB4C-D66E-454B-BE87-17D29132DBFF}"
+	ProjectSection(SolutionItems) = preProject
+		.github\pull_request_template.md = .github\pull_request_template.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ISSUE_TEMPLATE", "ISSUE_TEMPLATE", "{AC6277B5-214E-47EF-A331-A3E1C7CE1324}"
+	ProjectSection(SolutionItems) = preProject
+		.github\ISSUE_TEMPLATE\bug_report.md = .github\ISSUE_TEMPLATE\bug_report.md
+		.github\ISSUE_TEMPLATE\feature_request.md = .github\ISSUE_TEMPLATE\feature_request.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeCabinet.Domain", "RecipeCabinet.Domain\RecipeCabinet.Domain.csproj", "{43F14B48-99FB-4BDE-8385-ADF05FE8E438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeCabinet.DataAccess", "RecipeCabinet.DataAccess\RecipeCabinet.DataAccess.csproj", "{8435F163-99B7-45C8-AF05-2411058C1C3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D91AB233-5166-47E2-ADAA-423DFD616070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91AB233-5166-47E2-ADAA-423DFD616070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91AB233-5166-47E2-ADAA-423DFD616070}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D91AB233-5166-47E2-ADAA-423DFD616070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91AB233-5166-47E2-ADAA-423DFD616070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91AB233-5166-47E2-ADAA-423DFD616070}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{43F14B48-99FB-4BDE-8385-ADF05FE8E438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F14B48-99FB-4BDE-8385-ADF05FE8E438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F14B48-99FB-4BDE-8385-ADF05FE8E438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F14B48-99FB-4BDE-8385-ADF05FE8E438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8435F163-99B7-45C8-AF05-2411058C1C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8435F163-99B7-45C8-AF05-2411058C1C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8435F163-99B7-45C8-AF05-2411058C1C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8435F163-99B7-45C8-AF05-2411058C1C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D72AAB4C-D66E-454B-BE87-17D29132DBFF} = {979B3697-D481-46AA-ABB8-BC987A3B2AD2}
+		{AC6277B5-214E-47EF-A331-A3E1C7CE1324} = {D72AAB4C-D66E-454B-BE87-17D29132DBFF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C732CB0-374F-4E09-BDF4-F0C155F0BB9D}
+	EndGlobalSection
+EndGlobal

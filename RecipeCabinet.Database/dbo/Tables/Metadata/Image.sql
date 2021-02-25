@@ -1,0 +1,7 @@
+CREATE TABLE [Image]
+(
+    Id INT NOT NULL IDENTITY (1, 1),
+    MimeType VARCHAR(255) NOT NULL,
+    [Name] VARCHAR(255) NOT NULL, 
+    CONSTRAINT [PK_Id_Image] PRIMARY KEY ([Id])
+)

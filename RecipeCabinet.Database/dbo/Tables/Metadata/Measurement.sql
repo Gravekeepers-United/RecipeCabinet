@@ -1,0 +1,5 @@
+CREATE TABLE Measurement (
+    Id INT PRIMARY KEY IDENTITY (1, 1),
+    [Name] VARCHAR (50) UNIQUE NOT NULL,
+    Imperial BINARY NOT NULL
+);
