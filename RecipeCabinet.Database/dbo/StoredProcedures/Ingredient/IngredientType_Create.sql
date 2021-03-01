@@ -6,7 +6,9 @@ INSERT INTO IngredientType (
     [Name]
     )
 OUTPUT Inserted.Id
-VALUES (
-    @Name
-)
+SELECT @Name
+WHERE NOT EXISTS (SELECT * FROM IngredientType WHERE [Name] = @Name)
+--VALUES (
+--    @Name
+--)
 END
