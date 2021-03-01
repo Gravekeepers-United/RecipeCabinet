@@ -1,0 +1,7 @@
+CREATE PROCEDURE [Cabinet_Delete]
+	@Id INT
+AS
+BEGIN
+DELETE FROM Cabinet
+WHERE [Id] = @Id;
+END
