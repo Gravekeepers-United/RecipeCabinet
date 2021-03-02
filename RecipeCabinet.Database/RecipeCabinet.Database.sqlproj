@@ -93,6 +93,14 @@
     <Build Include="dbo\StoredProcedures\Ingredient\Ingredient_Delete.sql" />
     <Build Include="dbo\StoredProcedures\Ingredient\Ingredient_GetById.sql" />
     <Build Include="dbo\StoredProcedures\Ingredient\Ingredient_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\Cabinet_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\CabinetItem_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\Cabinet_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\Cabinet_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\Cabinet_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\CabinetItem_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\CabinetItem_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Cabinet\CabinetItem_Delete.sql" />
     <Build Include="dbo\StoredProcedures\Ingredient\IngredientType_Create.sql" />
   </ItemGroup>
   <ItemGroup>
