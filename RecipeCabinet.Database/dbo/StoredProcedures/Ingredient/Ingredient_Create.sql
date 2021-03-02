@@ -1,5 +1,3 @@
---USE [localdb]
---GO
 CREATE PROCEDURE Ingredient_Create
     @Name VARCHAR (50),
     @Type INT

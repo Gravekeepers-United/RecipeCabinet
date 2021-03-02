@@ -1,5 +1,3 @@
---USE [localdb]
---GO
 CREATE PROCEDURE Ingredient_Update
     @Id INT,
     @Name VARCHAR (50),
