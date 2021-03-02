@@ -93,6 +93,7 @@
     <Build Include="dbo\StoredProcedures\Ingredient\Ingredient_Delete.sql" />
     <Build Include="dbo\StoredProcedures\Ingredient\Ingredient_GetById.sql" />
     <Build Include="dbo\StoredProcedures\Ingredient\Ingredient_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Ingredient\IngredientType_Create.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="scripts\seed\.gitkeep" />
