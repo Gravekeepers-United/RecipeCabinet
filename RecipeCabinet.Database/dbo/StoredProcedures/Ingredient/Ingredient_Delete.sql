@@ -1,5 +1,3 @@
---USE [localdb]
---GO
 CREATE PROCEDURE Ingredient_Delete
     @Id INT
 AS
