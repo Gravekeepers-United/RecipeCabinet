@@ -1,0 +1,7 @@
+CREATE PROCEDURE [Rating_Delete]
+	@Id INT
+AS
+BEGIN
+DELETE FROM [Rating]
+WHERE [Id] = @Id
+END

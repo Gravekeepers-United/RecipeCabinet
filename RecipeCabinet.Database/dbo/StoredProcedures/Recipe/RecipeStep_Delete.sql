@@ -1,0 +1,7 @@
+CREATE PROCEDURE [RecipeStep_Delete]
+	@Id INT
+AS
+BEGIN
+DELETE FROM [RecipeStep]
+WHERE [Id] = @Id
+END

@@ -1,0 +1,7 @@
+CREATE PROCEDURE [Image_Delete]
+	@Id INT
+AS
+BEGIN
+DELETE FROM [Image]
+WHERE [Id] = @Id
+END

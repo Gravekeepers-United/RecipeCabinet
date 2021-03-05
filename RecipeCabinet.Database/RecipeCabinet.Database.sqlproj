@@ -73,6 +73,7 @@
     <Folder Include="dbo\StoredProcedures\Ingredient" />
     <Folder Include="dbo\StoredProcedures\Rating" />
     <Folder Include="dbo\StoredProcedures\Recipe" />
+    <Folder Include="dbo\StoredProcedures\Metadata" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\tables\Cabinet\Cabinet.sql" />
@@ -106,6 +107,45 @@
     <Build Include="dbo\StoredProcedures\Cabinet\CabinetItem_Update.sql" />
     <Build Include="dbo\StoredProcedures\Cabinet\CabinetItem_Delete.sql" />
     <Build Include="dbo\StoredProcedures\Ingredient\IngredientType_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\Rating_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\Rating_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\Rating_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\Rating_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\ReviewImage_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\ReviewImage_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\CookingType_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\CookingType_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\CookingType_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\CookingType_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\Recipe_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\Recipe_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\Recipe_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\Recipe_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeIngredient_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeIngredient_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeIngredient_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeIngredient_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeStep_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeStep_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeStep_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Recipe\RecipeStep_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Image_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Image_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Image_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Image_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Measurement_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Measurement_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Measurement_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\Measurement_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataTagging_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataTagging_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataTagging_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataTagging_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataType_Create.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataType_Update.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataType_GetById.sql" />
+    <Build Include="dbo\StoredProcedures\Metadata\MetadataType_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\ReviewImage_Delete.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="scripts\seed\.gitkeep" />
