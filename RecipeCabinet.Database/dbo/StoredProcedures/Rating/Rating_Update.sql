@@ -7,7 +7,7 @@ AS
 BEGIN
 UPDATE [Rating]
 SET 
-    [LastUpdatedOn] = GETDATE(),
+    [LastUpdatedOn] = GETUTCDATE(),
     [Message] = @Message,
     [Rating] = @Rating,
     [Recipe] = @Recipe
