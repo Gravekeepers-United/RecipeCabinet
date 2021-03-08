@@ -13,8 +13,8 @@ INSERT INTO [Rating] (
 )
 OUTPUT Inserted.Id
 VALUES (
-    GETDATE(),
-    GETDATE(),
+    GETUTCDATE(),
+    GETUTCDATE(),
     @Message,
     @Rating,
     @Recipe
