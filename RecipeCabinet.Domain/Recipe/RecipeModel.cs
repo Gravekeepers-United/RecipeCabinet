@@ -6,11 +6,8 @@ namespace RecipeCabinet.Domain.Recipe
 
     public class RecipeModel
     {
-        private int Id { get; set; }
-        private string Name { get; set; }
-        private string Description { get; set; }
-        private RecipeStepModel[] Steps { get; set; }
-        private CookingTypeModel Type { get; set; }
-        private RecipeIngredientModel[] Ingredients { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

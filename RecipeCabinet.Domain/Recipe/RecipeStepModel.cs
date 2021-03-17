@@ -5,11 +5,11 @@ namespace RecipeCabinet.Domain.Recipe
     /// </summary>
     public class RecipeStepModel
     {
-        private int Id { get; set; }
-        private int Recipe { get; set; }
-        private string Description { get; set; }
-        private int Order { get; set; }
-        private int Type { get; set; }
+        public int Id { get; set; }
+        public int Recipe { get; set; }
+        public string Description { get; set; }
+        public int Order { get; set; }
+        public int Type { get; set; }
 
     }
 }

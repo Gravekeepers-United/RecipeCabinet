@@ -112,7 +112,6 @@
     <Build Include="dbo\StoredProcedures\Rating\Rating_GetById.sql" />
     <Build Include="dbo\StoredProcedures\Rating\Rating_Delete.sql" />
     <Build Include="dbo\StoredProcedures\Rating\ReviewImage_Create.sql" />
-    <Build Include="dbo\StoredProcedures\Rating\ReviewImage_Update.sql" />
     <Build Include="dbo\StoredProcedures\Recipe\CookingType_Create.sql" />
     <Build Include="dbo\StoredProcedures\Recipe\CookingType_Update.sql" />
     <Build Include="dbo\StoredProcedures\Recipe\CookingType_GetById.sql" />
@@ -146,6 +145,7 @@
     <Build Include="dbo\StoredProcedures\Metadata\MetadataType_GetById.sql" />
     <Build Include="dbo\StoredProcedures\Metadata\MetadataType_Delete.sql" />
     <Build Include="dbo\StoredProcedures\Rating\ReviewImage_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\Rating\ReviewImage_GetByReview.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="scripts\seed\.gitkeep" />

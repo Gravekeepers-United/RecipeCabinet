@@ -11,11 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Metadata\" />
-    <Folder Include="Recipe\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\RecipeCabinet.Domain\RecipeCabinet.Domain.csproj" />
   </ItemGroup>
 

@@ -1,3 +1,6 @@
+using RecipeCabinet.Domain.Ingredient;
+using RecipeCabinet.Domain.Metadata;
+
 namespace RecipeCabinet.Domain.Recipe
 {
     /// <summary>
@@ -5,9 +8,10 @@ namespace RecipeCabinet.Domain.Recipe
     /// </summary>
     public class RecipeIngredientModel
     {
-        private int Id { get; set; }
-        private Ingredient Ingredient { get; set; }
-        private float Amount { get; set; }
-        private Measurement Measurement { get; set; }
+        public int Id { get; set; }
+        public int Recipe { get; set; }
+        public int Ingredient { get; set; }
+        public float Amount { get; set; }
+        public int Measurement { get; set; }
     }
 }

@@ -1,11 +1,10 @@
-using Microsoft.Extensions.Configuration;
 using RecipeCabinet.DataAccess.Common;
 using RecipeCabinet.Domain.Ingredient;
 using System.Data.SqlClient;
 
 namespace RecipeCabinet.DataAccess.Ingredient
 {
-    public class IngredientRepository : BaseRepository, IIngredientRepository
+    public class IngredientRepository : IIngredientRepository
     {
         // SPROCS
         private const string INGREDIENT_CREATE_SPROC = "Ingredient_Create";
@@ -13,13 +12,19 @@ namespace RecipeCabinet.DataAccess.Ingredient
         private const string INGREDIENT_UPDATE_SPROC = "Ingredient_Update";
         private const string INGREDIENT_DELETE_SPROC = "Ingredient_Delete";
 
-        public IngredientRepository(IConfiguration configuration) : base(configuration) { }
+
+        private IDatabaseContext _dbContext;
+
+        public IngredientRepository(IDatabaseContext sqlDatabaseContext)
+        {
+            _dbContext = sqlDatabaseContext;
+        }
 
         public IngredientModel Create(IngredientModel ingredient)
         {
             SqlParameter nameParam = new SqlParameter("Name", ingredient.Name);
             SqlParameter typeParam = new SqlParameter("Type", ingredient.Type);
-            SqlDataReader reader = ExecuteReader(INGREDIENT_CREATE_SPROC, System.Data.CommandType.StoredProcedure, nameParam, typeParam);
+            SqlDataReader reader = _dbContext.ExecuteReader(INGREDIENT_CREATE_SPROC, System.Data.CommandType.StoredProcedure, nameParam, typeParam);
             while (reader.Read())
             {
                 // This might not be right.
@@ -32,7 +37,7 @@ namespace RecipeCabinet.DataAccess.Ingredient
         {
             IngredientModel model = null;
             SqlParameter param = new SqlParameter("Id", id);
-            SqlDataReader reader = ExecuteReader(INGREDIENT_GETBYID_SPROC, System.Data.CommandType.StoredProcedure, param);
+            SqlDataReader reader = _dbContext.ExecuteReader(INGREDIENT_GETBYID_SPROC, System.Data.CommandType.StoredProcedure, param);
             while (reader.Read())
             {
                 model = new IngredientModel
@@ -50,7 +55,7 @@ namespace RecipeCabinet.DataAccess.Ingredient
             SqlParameter param = new SqlParameter("Id", ingredient.Id);
             SqlParameter nameParam = new SqlParameter("Name", ingredient.Name);
             SqlParameter typeParam = new SqlParameter("Type", ingredient.Type);
-            ExecuteNonReader(INGREDIENT_UPDATE_SPROC, System.Data.CommandType.StoredProcedure, param, nameParam, typeParam);
+            _dbContext.ExecuteNonReader(INGREDIENT_UPDATE_SPROC, System.Data.CommandType.StoredProcedure, param, nameParam, typeParam);
 
             return ingredient;
         }
@@ -58,7 +63,7 @@ namespace RecipeCabinet.DataAccess.Ingredient
         public void Delete (int id)
         {
             SqlParameter param = new SqlParameter("Id", id);
-            ExecuteNonReader(INGREDIENT_DELETE_SPROC, System.Data.CommandType.StoredProcedure, param);
+            _dbContext.ExecuteNonReader(INGREDIENT_DELETE_SPROC, System.Data.CommandType.StoredProcedure, param);
         }
     }
 }

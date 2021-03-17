@@ -1,19 +1,14 @@
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeCabinet.DataAccess.Common
 {
-    abstract public class BaseRepository
+    public class DatabaseContext : IDatabaseContext
     {
         private string _connectionString;
         private IConfiguration _configuration;
-        public BaseRepository(IConfiguration configuration)
+        public DatabaseContext(IConfiguration configuration)
         {
             _configuration = configuration;
             _connectionString = _configuration.GetConnectionString("RecipeCabinet");
